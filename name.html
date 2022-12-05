@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.2.1-dist\css\bootstrap.css">
-    <style>body { padding-top: 70px; }</style>    
+    <style>
+    body { padding-top: 70px; }
+    #carouselHero .carousel-item img {  
+  object-fit: cover;
+  object-position: bottom;
+  height:90vh;
+}
+    </style>    
 </head>
 <body>
     <script src="bootstrap-5.2.1-dist\js\bootstrap.js"></script>
@@ -37,48 +44,80 @@
           </div>
         </div>
       </nav>
-      <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselHero" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" aria-label="Slide 1" aria-current="true" class="active" ></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="pic1.jpg" alt="First">
+            <img src="pic1.jpg" class="d-block w-100" alt="dog1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 1</h5>
+              <p>This is a good dog 1.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic2.jpg" alt="Second">
+            <img src="pic2.jpg" class="d-block w-100" alt="dog2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 2</h5>
+              <p>This is a good dog 2.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic3.jpg" alt="Third">
+            <img src="pic3.jpg" class="d-block w-100" alt="dog3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 3</h5>
+              <p>This is a good dog 3.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic4.jpg" alt="Fourth">
+            <img src="pic4.jpg" class="d-block w-100" alt="dog4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 4</h5>
+              <p>This is a good dog 4.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic5.jpg" alt="Fifth">
+            <img src="pic5.jpg" class="d-block w-100" alt="dog5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 5</h5>
+              <p>This is a good dog 5.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic6.jpg" alt="Sixth">
+            <img src="pic6.jpg" class="d-block w-100" alt="dog6">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 6</h5>
+              <p>This is a good dog 6.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic7.jpg" alt="Seventh">
+            <img src="pic7.jpg" class="d-block w-100" alt="dog7">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 7</h5>
+              <p>This is a good dog 7.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="pic8.jpg" alt="Eighth">
+            <img src="pic8.jpg" class="d-block w-100" alt="dog8">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dog 8</h5>
+              <p>This is a good dog 8.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slides="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>

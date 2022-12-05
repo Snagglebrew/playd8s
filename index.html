@@ -2,59 +2,100 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="bootstrap-5.2.1-dist\css\bootstrap.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<script src="bootstrap-5.2.1-dist\js\bootstrap.bundle.js"></script>
+		<script src="bootstrap-5.2.1-dist\js\bootstrap.js"></script>
 		<nav class="navbar navbar-expand-lg bg-light fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Home</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="offcanvas offcanvas-end"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-				>
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="offcanvas-body">
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="index.html"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="name.html">Matches</a>
-							</li>
-							<li class=="nav-item">
-							<a class="nav-link" href="contact.html">Messages</a>
-						</ul>
-					</div>
+			  <a class="navbar-brand" href="#">Matches</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
+				<div class="offcanvas-body">
+				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+					  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link active" href="name.html">Matches</a>
+					</li>
+					<li class=="nav-item">
+					  <a class="nav-link" href="contact.html">Messages</a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
 			</div>
-		</nav>
-		<div>
-			<img src="dog.jpg" class="img-fluid" alt="Puppies" />
+		  </nav>
+		<div class="tinder">
+		  <div class="tinder--status">
+			<i class="fa fa-remove"></i>
+			<i class="fa fa-heart"></i>
+		  </div>
+		
+		  <div class="tinder--cards">
+			<div class="tinder--card">
+			  <img src="pic5.jpg">
+			  <h3>Dog 1</h3>
+			  <p>Dog Tinder Placeholder 1</p>
+			</div>
+			<div class="tinder--card">
+			  <img src="pic4.jpg">
+			  <h3>Dog 2</h3>
+			  <p>Dog Tinder Placeholder 2</p>
+			</div>
+			<div class="tinder--card">
+			  <img src="pic3.jpg">
+			  <h3>Dog 3</h3>
+			  <p>Dog Tinder Placeholder 3</p>
+			</div>
+			<div class="tinder--card">
+			  <img src="pic1.jpg">
+			  <h3>Dog 4</h3>
+			  <p>Dog Tinder Placeholder 4</p>
+			</div>
+			<div class="tinder--card">
+			  <img src="pic2.jpg">
+			  <h3>Dog 5</h3>
+			  <p>Dog Tinder Placeholder 5</p>
+			</div>
+		  </div>
+		  <div class="tinder--card">
+			<img src="pic6.jpg">
+			<h3>Dog 6</h3>
+			<p>Dog Tinder Placeholder 6</p>
+		  </div>
 		</div>
-	</body>
-</html>
+		<div class="tinder--card">
+			<img src="pic7.jpg">
+			<h3>Dog 7</h3>
+			<p>Dog Tinder Placeholder 7</p>
+		  </div>
+		</div>
+		<div class="tinder--card">
+			<img src="pic8.jpg">
+			<h3>Dog 8</h3>
+			<p>Dog Tinder Placeholder 8</p>
+		  </div>
+		</div>
+
+		  <div class="tinder--buttons">
+			<button id="nope"><i class="fa fa-remove"></i></button>
+			<button id="love"><i class="fa fa-heart"></i></button>
+		  </div>
+		</div>
+		  <script src='https://hammerjs.github.io/dist/hammer.min.js'></script><script  src="./script.js"></script>
+		
+		</body>
+		</html>
